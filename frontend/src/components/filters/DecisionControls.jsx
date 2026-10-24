@@ -17,7 +17,8 @@ export default function DecisionControls({ decisionDate, cutoff, deliveryDate, o
             min="2026-01-01"
             max="2026-01-31"
             value={decisionDate}
-            onChange={(event) => onDecisionDateChange(event.target.value)}
+            onChange={(event) => event.target.value && onDecisionDateChange(event.target.value)}
+            required
           />
         </label>
         <label className="control-field">
@@ -26,7 +27,8 @@ export default function DecisionControls({ decisionDate, cutoff, deliveryDate, o
             type="time"
             step="60"
             value={cutoff}
-            onChange={(event) => onCutoffChange(event.target.value)}
+            onChange={(event) => event.target.value && onCutoffChange(event.target.value)}
+            required
           />
           <small>Europe/London</small>
         </label>

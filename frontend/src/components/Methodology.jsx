@@ -1,9 +1,9 @@
-import { Ban, ClockCheck, Database, FlaskConical, Info, Waves } from 'lucide-react'
+import { Ban, Clock3, Database, FlaskConical, Info, Waves } from 'lucide-react'
 
 const notes = [
   { icon: Database, title: 'Observed generation', text: 'Actual generation uses national Elexon FUELHH wind outturn.' },
   { icon: Waves, title: 'Forecast history', text: 'Forecasts use Elexon WINDFOR historical publication revisions.' },
-  { icon: ClockCheck, title: 'No look-ahead', text: 'Each hour uses the latest eligible forecast at or before the purchasing cutoff.' },
+  { icon: Clock3, title: 'No look-ahead', text: 'Each hour uses the latest eligible forecast at or before the purchasing cutoff.' },
   { icon: FlaskConical, title: 'Hourly actuals', text: 'Actual MW is the mean of two complete half-hour readings at HH:00 and HH:30.' },
   { icon: Ban, title: 'No invented data', text: 'Missing observations are not zero-filled, interpolated, or forward-filled.' },
   { icon: Info, title: 'Scope limits', text: 'WINDFOR interval semantics remain an assumption. Prices and financial impact are not included.' },

@@ -2,6 +2,7 @@ import {
   Area,
   AreaChart,
   CartesianGrid,
+  ReferenceLine,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -30,7 +31,9 @@ export default function DailyMaeChart({ days = [], selectedDate }) {
     mae: day.metrics?.mae,
     matched: day.coverage?.matchedPeriods,
   }))
-  if (!data.length) return <EmptyState message="No daily accuracy statistics are available." />
+  if (!data.length || !data.some((day) => day.mae != null)) {
+    return <EmptyState message="No daily accuracy statistics are available." />
+  }
 
   return (
     <div className="chart-container chart-container-small" role="img" aria-label="January daily mean absolute error trend">
@@ -46,6 +49,14 @@ export default function DailyMaeChart({ days = [], selectedDate }) {
           <XAxis dataKey="day" tick={{ fill: '#65758B', fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#DCE3EB' }} interval={4} />
           <YAxis tick={{ fill: '#65758B', fontSize: 12 }} tickLine={false} axisLine={false} tickFormatter={(value) => `${Math.round(value / 1000)}k`} width={42} />
           <Tooltip content={<TrendTooltip />} />
+          {selectedDate && (
+            <ReferenceLine
+              x={Number(selectedDate.slice(-2))}
+              stroke="#14243A"
+              strokeDasharray="3 4"
+              strokeOpacity={0.45}
+            />
+          )}
           <Area type="monotone" dataKey="mae" stroke="#0D9488" strokeWidth={2.5} fill="url(#maeFill)" connectNulls={false} activeDot={{ r: 5, fill: '#0D9488', stroke: '#FFFFFF', strokeWidth: 2 }} />
         </AreaChart>
       </ResponsiveContainer>

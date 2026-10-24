@@ -45,6 +45,17 @@ def test_health_response(client) -> None:
     assert body["historicalDataset"]["available"] is True
 
 
+def test_cors_is_limited_to_configured_local_origin(client) -> None:
+    allowed = client.get(
+        "/api/health", headers={"Origin": "http://127.0.0.1:5173"}
+    )
+    blocked = client.get(
+        "/api/health", headers={"Origin": "https://untrusted.example"}
+    )
+    assert allowed.headers["Access-Control-Allow-Origin"] == "http://127.0.0.1:5173"
+    assert "Access-Control-Allow-Origin" not in blocked.headers
+
+
 def test_forecast_response_schema(client) -> None:
     response = client.get("/api/forecast?decision_date=2026-01-14&cutoff=12:00")
     assert response.status_code == 200

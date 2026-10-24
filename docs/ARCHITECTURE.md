@@ -26,17 +26,25 @@ backend/data/raw  -> normalization -> backend/data/processed
 
 ## React frontend responsibilities
 
-The React application will:
+The React application:
 
 - provide a decision-date selector constrained to 1–31 January 2026;
 - display the derived next-day delivery date and configured cutoff, including timezone;
-- request analysis from Flask through a single fetch service configured by an environment variable;
+- requests analysis from Flask through a single fetch service configured by an environment variable;
 - visualize selected hourly forecast versus complete candidate hourly actuals;
 - display MAE, RMSE, mean bias error, WAPE, coverage, and missing-period counts;
 - expose loading, empty, partial-data, validation, and server-error states;
 - label units, sign conventions, timezones, and incomplete coverage clearly.
 
-It will not call Elexon directly, choose eligible forecasts, or calculate authoritative metrics. Keeping those rules on the backend gives every client one consistent, testable result.
+It does not call Elexon directly, choose eligible forecasts, or calculate
+authoritative accuracy metrics. `AbortController` cancels superseded requests
+when filters change. Vite provides local development and a proxy option;
+production API location comes from `VITE_API_BASE_URL`.
+
+The component structure separates layout, decision controls, KPI cards, charts,
+selected-day detail, methodology, API access, and display formatting. Recharts
+renders the hourly generation, daily MAE, and bias views. Missing values remain
+`null`, and line charts do not connect gaps.
 
 ## Flask backend responsibilities
 

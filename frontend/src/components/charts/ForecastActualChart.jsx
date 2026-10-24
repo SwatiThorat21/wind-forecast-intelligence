@@ -29,6 +29,9 @@ function ChartTooltip({ active, payload, label }) {
 
 export default function ForecastActualChart({ periods = [] }) {
   if (!periods.length) return <EmptyState message="No hourly records are available for this delivery date." />
+  if (!periods.some((period) => period.forecastMw != null || period.actualMw != null)) {
+    return <EmptyState message="Hourly records contain no forecast or actual generation values." />
+  }
   const data = periods.map((period) => ({
     ...period,
     hour: formatDeliveryHour(period),

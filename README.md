@@ -7,10 +7,11 @@ following Europe/London calendar date, including 1 February.
 
 ## Current status
 
-Phase 3 implements an in-memory historical data store, cutoff-aware forecast
-selection, accuracy metrics, and Flask REST APIs. The backend reads the
-processed Phase 2B JSON once at application startup and never calls Elexon from
-a request. React, charts, Docker, and deployment remain out of scope.
+Phase 4 adds a responsive React/Vite analytics dashboard to the completed Flask
+analysis backend. The interface includes portfolio KPIs, cutoff-aware decision
+controls, hourly forecast-versus-actual analysis, January error trends, bias
+distribution, hourly detail, and methodology disclosures. Docker and deployment
+remain out of scope.
 
 The Phase 2A local probe verified 48 half-hour WIND actuals for 15 January and
 584 WINDFOR rows across eight 14 January publications. At a 12:00 UTC cutoff,
@@ -21,7 +22,7 @@ The completed full-month ingestion contains 1,488 FUELHH rows and 19,856
 WINDFOR rows with no failed or incomplete batches. At a 12:00 cutoff, all 744
 January decision/delivery hours are matched.
 
-## Setup and tests
+## Backend setup and tests
 
 Python 3.11 or newer is required. From the repository root:
 
@@ -34,6 +35,30 @@ python3 -m pytest backend/tests -q
 
 Elexon uses a public API and no credentials are required.
 
+## Frontend setup
+
+From the repository root:
+
+```bash
+cd frontend
+npm install
+cp .env.example .env.local
+npm run dev
+```
+
+The Vite development server is available at `http://127.0.0.1:5173`.
+
+Frontend environment variables:
+
+```text
+VITE_API_BASE_URL=http://127.0.0.1:5000
+VITE_API_PROXY_TARGET=http://127.0.0.1:5000
+```
+
+`VITE_API_BASE_URL` selects the browser API origin. As an alternative during
+development, set it to `/api` to use the Vite proxy and configure the proxy
+target with `VITE_API_PROXY_TARGET`.
+
 ## Start the Flask backend
 
 ```bash
@@ -43,6 +68,33 @@ python3 backend/run.py
 
 The development server listens on `http://127.0.0.1:5000`. It loads processed
 JSON at startup; it does not start ingestion.
+
+For local development, use two terminals:
+
+```bash
+# Terminal 1
+source .venv/bin/activate
+python3 backend/run.py
+
+# Terminal 2
+cd frontend
+npm run dev
+```
+
+The backend permits browser requests only from explicitly configured origins.
+The defaults are `http://127.0.0.1:5173` and `http://localhost:5173`. Override
+them with a comma-separated `CORS_ALLOWED_ORIGINS` environment variable.
+
+## Dashboard features
+
+- January portfolio MAE, RMSE, bias, WAPE, and matched-data coverage cards.
+- Decision date and Europe/London purchasing-cutoff controls.
+- Interactive hourly forecast-versus-actual chart with signed errors.
+- January daily MAE trend and over/underforecast distribution.
+- Selected-day metrics and a scrollable 24-hour audit table.
+- Explicit loading, API error, empty-data, and partial-coverage states.
+- Responsive desktop, tablet, and mobile layouts with accessible labels and
+  keyboard-operable controls.
 
 ## REST API
 
@@ -154,3 +206,12 @@ and warnings. Writes use temporary files and atomic replacement.
 See [data exploration](docs/DATA_EXPLORATION.md),
 [architecture](docs/ARCHITECTURE.md), and
 [assumptions](docs/ASSUMPTIONS.md) for rationale and limitations.
+
+## Known limitations
+
+- The dashboard covers January 2026 decision dates only.
+- Hourly actuals use complete pairs of FUELHH half-hour readings; WINDFOR
+  interval semantics remain a documented assumption.
+- Forecast accuracy is not a financial-impact measure because electricity
+  prices and purchasing volumes are not included.
+- The frontend is a read-only analytical client and does not trigger ingestion.
