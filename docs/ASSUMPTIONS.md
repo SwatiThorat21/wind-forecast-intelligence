@@ -13,7 +13,9 @@
 - The assignment does not define the purchasing cutoff, so it must be configuration rather than an implicit constant.
 - The cutoff consists of a local wall-clock time and the `Europe/London` timezone.
 - The UI and API response must show the effective cutoff used.
-- No production default has been agreed. Phase 3 should either require configuration or adopt a clearly labeled default after stakeholder confirmation; a convenient assumed market time must not be presented as an Elexon rule.
+- No business default has been agreed. Phase 3 therefore requires an explicit
+  `cutoff=HH:MM` query parameter rather than presenting a convenient time as an
+  Elexon rule.
 - Changing the cutoff changes forecast eligibility and therefore can change every reported metric.
 
 ## Time handling
@@ -29,7 +31,7 @@
 - `startTime` is the target generation period.
 - `publishTime` is when that forecast became available.
 - A row is eligible only when its target belongs to the next-day delivery interval and `publishTime <= decision cutoff`.
-- For each hourly target, a later phase will choose the eligible row with the maximum `publishTime`.
+- For each hourly target, Phase 3 chooses the eligible row with the maximum `publishTime`.
 - The equality case is eligible because the rule says “at or before” the cutoff.
 - Selection occurs independently for every target period; a delivery-day curve may therefore contain rows from more than one publication if source coverage differs.
 - No later publication may be used to fill a gap. A period with no eligible forecast remains missing.
@@ -37,15 +39,19 @@
 - WINDFOR rows with `startTime < publishTime` are retained for diagnostics but excluded from day-ahead selection because the target had already begun before that publication.
 - Zero lead-time rows are reported separately and are not assumed to be day-ahead forecasts.
 
-## Future metrics (not implemented in Phase 2B)
+## Phase 3 metrics
 
 - Error and bias use `forecast - actual`; positive mean bias indicates over-forecasting.
-- MAE, RMSE, bias, and WAPE will be calculated only in a later phase and only from hours with both a valid selected forecast and a valid actual value.
+- MAE, RMSE, bias, and WAPE are calculated only from hours with both a valid selected forecast and a valid actual value.
 - WAPE is `sum(abs(forecast - actual)) / sum(abs(actual)) * 100` and is undefined for a zero denominator.
 - Coverage and counts accompany metrics so a deceptively good score over partial data is visible.
 - Missing values are not converted to zero and are not interpolated in the MVP.
 - If WINDFOR is confirmed to be hourly, comparison will use only complete aligned actual hours: the mean of the FUELHH `HH:00` and `HH:30` average-MW readings. An hour with either half missing is excluded rather than imputed.
 - The hourly method remains provisional until Elexon's target semantics are confirmed as comparable to an average over the same hourly window.
+- Mean forecast MW, mean actual MW, maximum absolute error, overforecast,
+  underforecast, exact-match, matched, and missing counts are also returned.
+- Monthly metrics aggregate all matched hourly observations directly. They are
+  not an unweighted average of daily metrics.
 
 ## Data quality and lineage
 
@@ -67,6 +73,10 @@
   may be required.
 - A bounded window is not treated as proof of complete source coverage. Every
   decision date receives an explicit missing-hour count.
+- The completed January ingestion found no delivery target dependent on the
+  oldest 24 hours of the lookback and provided 24 eligible targets for every
+  decision date at the verified 12:00 cutoff. Other cutoff values are evaluated
+  dynamically and may have different coverage.
 
 ## Actual-generation revision policy
 
@@ -86,7 +96,7 @@
 - The forecast represents wind farms visible to the system operator with operational metering; it may not represent all physical UK wind output.
 - Forecast accuracy is not the same as procurement financial impact because the MVP has no purchase volumes or market prices.
 - Historical source data can be revised after the operational decision. The MVP must preserve retrieval provenance and disclose which outturn extract was used.
-- The Phase 2A sample was successfully run locally, but it does not establish
-  full-month gaps, revision behavior, or precise publication-range
-  inclusivity. Phase 2B uses non-overlapping daily windows ending at
-  `23:59:59.999999Z` and reports all observed issues.
+- The full January download had no gaps at the 12:00 cutoff, but this does not
+  guarantee complete coverage for every possible cutoff.
+- WINDFOR interval semantics remain an assumption even though the records are
+  hourly. API responses include this methodology disclosure.

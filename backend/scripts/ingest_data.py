@@ -43,6 +43,9 @@ try:
         FUELHH_PATH,
         WINDFOR_PATH,
     )
+    from backend.app.services.forecast_service import (  # noqa: E402
+        select_latest_eligible_forecast,
+    )
 except ModuleNotFoundError as exc:  # Direct-script fallback for restricted shells.
     if exc.name != "backend":
         raise
@@ -62,6 +65,9 @@ except ModuleNotFoundError as exc:  # Direct-script fallback for restricted shel
         ElexonError,
         FUELHH_PATH,
         WINDFOR_PATH,
+    )
+    from app.services.forecast_service import (  # type: ignore[no-redef]  # noqa: E402
+        select_latest_eligible_forecast,
     )
 
 
@@ -416,16 +422,17 @@ def build_validation_report(
             by_target[parse_timestamp(row["start_time"], "start_time")].append(row)
         selected: dict[datetime, dict[str, Any]] = {}
         for target, candidates in sorted(by_target.items()):
-            latest_publish = max(row["publish_time"] for row in candidates)
-            latest = [row for row in candidates if row["publish_time"] == latest_publish]
-            values = {repr(row.get("generation_mw")) for row in latest}
-            if len(values) != 1:
+            row, conflict = select_latest_eligible_forecast(
+                candidates, target, cutoff
+            )
+            if conflict:
                 concerns.append(
                     f"{decision.isoformat()} target {utc_iso(target)} has conflicting "
-                    f"latest forecast values at {latest_publish}."
+                    f"latest forecast values at {row['_publish'].isoformat()}."
                 )
                 continue
-            selected[target] = latest[0]
+            if row is not None:
+                selected[target] = row
         eligible = set(selected)
         missing_forecast_by_decision[decision.isoformat()] = [
             utc_iso(value) for value in expected_hours if value not in eligible

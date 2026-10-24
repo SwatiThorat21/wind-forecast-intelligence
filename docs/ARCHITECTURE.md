@@ -30,7 +30,7 @@ The React application will:
 
 - provide a decision-date selector constrained to 1–31 January 2026;
 - display the derived next-day delivery date and configured cutoff, including timezone;
-- request analysis from Flask through a single Axios service configured by an environment variable;
+- request analysis from Flask through a single fetch service configured by an environment variable;
 - visualize selected hourly forecast versus complete candidate hourly actuals;
 - display MAE, RMSE, mean bias error, WAPE, coverage, and missing-period counts;
 - expose loading, empty, partial-data, validation, and server-error states;
@@ -40,9 +40,9 @@ It will not call Elexon directly, choose eligible forecasts, or calculate author
 
 ## Flask backend responsibilities
 
-Flask will be a thin HTTP layer over domain services. Planned responsibilities are:
+Flask is a thin HTTP layer over domain services. Implemented responsibilities are:
 
-- validate decision dates and optional cutoff configuration;
+- validate decision dates and the required cutoff parameter;
 - load normalized JSON through a storage/repository boundary;
 - derive the delivery-day interval in `Europe/London` and UTC;
 - invoke forecast selection without look-ahead;
@@ -51,11 +51,13 @@ Flask will be a thin HTTP layer over domain services. Planned responsibilities a
 - return analysis data plus coverage, missingness, provenance, and cutoff metadata;
 - map invalid input, missing data, and internal failures to explicit API errors.
 
-Routes should parse and serialize only. Elexon access belongs in `elexon_client.py`, selection in `forecast_service.py`, and calculations in `metrics_service.py`. Python functions and returned domain structures will use type hints.
+Routes parse and serialize only. Elexon access belongs in `elexon_client.py`,
+processed-file loading in `data_store.py`, selection in `forecast_service.py`,
+and calculations in `metrics_service.py`.
 
 ## Elexon ingestion
 
-Ingestion will be an explicit script, separate from the web process, so dashboard latency and availability do not depend on Elexon. It will:
+Ingestion is an explicit script, separate from the web process, so dashboard latency and availability do not depend on Elexon. It:
 
 1. request bounded windows with timeouts and clear error handling;
 2. fetch FUELHH delivery periods by settlement-date range and filter `fuelType=WIND`;
@@ -137,17 +139,16 @@ the source of record. The methodology remains provisional because Elexon
 describes WINDFOR values at hourly target timestamps but the exact interval
 semantics still require confirmation.
 
-## Future alignment and accuracy metrics
+## Alignment and accuracy metrics
 
-Phase 3 may join forecast and provisional hourly actual rows by canonical UTC
-`start_time`. No accuracy metric is calculated in Phase 2B. The future error
-definition is:
+Phase 3 joins selected forecast and provisional hourly actual rows by canonical
+UTC `start_time`. The error definition is:
 
 ```text
 error = forecast_mw - actual_mw
 ```
 
-In Phase 3, for the set of valid matched hourly pairs:
+For the set of valid matched hourly pairs:
 
 - MAE: `mean(abs(error))`
 - RMSE: `sqrt(mean(error^2))`
@@ -163,7 +164,13 @@ dates.
 
 ## API communication
 
-The frontend will use a versioned API prefix such as `/api/v1`. A likely primary resource is `GET /api/v1/analysis?decision_date=YYYY-MM-DD`; the final contract will be designed in Phase 3. Responses should contain:
+The implemented read-only endpoints are:
+
+- `GET /api/health`;
+- `GET /api/forecast?decision_date=YYYY-MM-DD&cutoff=HH:MM`;
+- `GET /api/summary?cutoff=HH:MM`.
+
+Responses contain:
 
 - decision and delivery metadata;
 - cutoff local time and UTC instant;
@@ -171,7 +178,21 @@ The frontend will use a versioned API prefix such as `/api/v1`. A likely primary
 - metrics and coverage;
 - data provenance and warnings.
 
-CORS will allow only configured frontend origins outside local development. The frontend base URL and backend allowed origins will come from environment variables; production URLs will not be hardcoded.
+Invalid query input returns 400. Missing or corrupt processed history returns
+503 rather than fabricated metrics. Unknown resources return 404 and unexpected
+errors return a consistent JSON 500 response. Local browser access is limited
+to explicitly configured origins; the default allows only the Vite development
+origins on `localhost:5173` and `127.0.0.1:5173`.
+
+## Runtime data loading
+
+`HistoricalDataStore` validates every processed envelope and loads it once when
+the Flask application factory runs. It derives 744 candidate hourly actuals by
+calling the shared Phase 2B aggregation function and indexes the complete
+forecast revision history by target timestamp. Requests then select against
+those immutable in-memory indexes, allowing cutoff changes without file reads,
+downloads, or mutation. Missing directories, malformed JSON, dataset mismatches,
+and count mismatches are explicit availability errors. No database is used.
 
 ## Deployment
 
