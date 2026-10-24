@@ -1,351 +1,228 @@
 # Wind Forecast Intelligence
 
-Wind Forecast Intelligence is a decision-support project for evaluating the
-national wind forecast available at a configurable day-ahead purchasing
-cutoff. The supported decision dates are 1–31 January 2026; delivery is the
-following Europe/London calendar date, including 1 February.
+**Cutoff-aware UK day-ahead wind generation forecasting and accuracy analytics**
 
-## Current status
+Wind Forecast Intelligence is a full-stack decision-support dashboard that helps electricity procurement teams evaluate the wind generation forecasts available at the time of a historical purchasing decision.
 
-Phase 5 packages the completed React/Vite dashboard and Flask analysis API for
-repeatable local containers and public deployment preparation. The backend runs
-under Gunicorn, the frontend is built as static assets, CORS is origin-limited,
-and the verified processed Elexon dataset is packaged with the API. No service
-performs ingestion or live Elexon requests while serving dashboard traffic.
+Instead of comparing actual generation with a forecast published later, the application reconstructs what was known at the chosen decision cutoff, helping prevent look-ahead bias in forecast evaluation.
 
-The Phase 2A local probe verified 48 half-hour WIND actuals for 15 January and
-584 WINDFOR rows across eight 14 January publications. At a 12:00 UTC cutoff,
-the 11:30 publication supplied 24 delivery targets and all 24 aligned with
-complete candidate hourly actuals.
+Built with **React, Flask, Python, Recharts, and historical Elexon BMRS data**.
 
-The completed full-month ingestion contains 1,488 FUELHH rows and 19,856
-WINDFOR rows with no failed or incomplete batches. At a 12:00 cutoff, all 744
-January decision/delivery hours are matched.
+## The Problem
 
-## Local development setup
+Electricity procurement decisions depend on the expected availability of wind generation. When actual wind output differs from forecasts, procurement teams may face greater uncertainty when planning purchases.
 
-Python 3.11 or newer is required. From the repository root:
+Evaluating forecast accuracy fairly requires using only forecasts published before the purchasing decision—not revised forecasts published afterward.
+
+This application provides a transparent, cutoff-aware historical evaluation workflow.
+
+## Key Features
+
+- **Configurable decision cutoff:** Select a January 2026 purchasing date and Europe/London cutoff time.
+- **Historical forecast reconstruction:** Select the latest eligible published forecast for each next-day delivery hour.
+- **Forecast vs actual visualization:** Compare predicted wind generation with actual generation using interactive charts.
+- **Accuracy analytics:** Calculate MAE, RMSE, signed bias, WAPE, and data coverage.
+- **Daily performance analysis:** Explore daily errors and overforecast/underforecast patterns.
+- **Hourly auditability:** Inspect forecast values, actual output, errors, and forecast publication timestamps.
+- **Transparent data handling:** Preserve historical forecast revisions and report missing or conflicting observations.
+- **Responsive dashboard:** Support desktop, tablet, and mobile layouts.
+
+## Dashboard Preview
+
+Add a screenshot of the working dashboard here:
+
+![Wind Forecast Intelligence Dashboard](docs/images/dashboard.png)
+
+## January 2026 Results
+
+The following results use a 12:00 Europe/London purchasing cutoff across the January 2026 decision period.
+
+| Metric | Value |
+|---|---:|
+| Decision dates | 31 |
+| Matched hourly observations | 744 / 744 |
+| Mean Absolute Error (MAE) | 1,901.001 MW |
+| Root Mean Square Error (RMSE) | 2,359.126 MW |
+| Mean Forecast Bias | +1,687.223 MW |
+| Weighted Absolute Percentage Error (WAPE) | 16.848% |
+| Overforecast periods | 634 |
+| Underforecast periods | 110 |
+| Matched data coverage | 100% |
+
+**Key observation:** At the selected cutoff, historical forecasts more frequently overestimated than underestimated wind generation.
+
+These results represent forecast accuracy, not estimated financial losses or realized electricity procurement costs.
+
+## Technology Stack
+
+| Layer | Technologies |
+|---|---|
+| Frontend | React, Vite, JavaScript, Recharts |
+| Backend | Python, Flask, Gunicorn |
+| Data source | Elexon BMRS API |
+| Storage | Version-preserving historical JSON |
+| Testing | pytest |
+| Containerization | Docker, Docker Compose |
+| Deployment | Render backend, Vercel frontend |
+
+## Architecture
+
+```text
+Elexon BMRS APIs
+       |
+       v
+Python ingestion and validation
+       |
+       v
+Historical JSON datasets
+       |
+       v
+Flask analysis services
+       |
+       v
+REST APIs
+       |
+       v
+React dashboard
+```
+
+The application uses preprocessed historical data for dashboard requests rather than fetching data from Elexon on every request.
+
+### Data Sources
+
+**FUELHH:** Actual wind generation, provided at half-hourly intervals.
+
+**WINDFOR:** Historical wind generation forecasts, including publication and target timestamps.
+
+The analysis covers purchasing decisions from January 1–31, 2026, with next-day deliveries through February 1, 2026.
+
+## Forecast Selection Methodology
+
+For each selected decision date and cutoff:
+
+1. Determine the following Europe/London calendar date as the delivery date.
+2. Identify forecast records targeting that delivery date.
+3. Exclude forecasts published after the purchasing cutoff.
+4. Select the latest eligible forecast publication independently for each hourly target.
+5. Align selected hourly forecasts with available hourly actual observations.
+6. Calculate accuracy metrics using valid matched observations only.
+
+Hourly actual generation is derived from the arithmetic mean of two complete, aligned half-hourly FUELHH observations. This comparison assumes compatible hourly interval semantics for WINDFOR; that interpretation remains a documented limitation.
+
+No missing observations are replaced with fabricated or interpolated values.
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.11+
+- Node.js and npm
+- Git
+
+### Backend
+
+From the project root:
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-python3 -m pip install -r requirements-dev.txt
-python3 -m pytest backend/tests -q
+python -m pip install -r requirements-dev.txt
+python backend/run.py
 ```
 
-Elexon uses a public API and no credentials are required.
+The development API runs at:
 
-## Frontend setup
+`http://127.0.0.1:5000`
 
-From the repository root:
+### Frontend
+
+Open a second terminal:
 
 ```bash
 cd frontend
 npm install
-cp .env.example .env.development.local
+cp .env.example .env.local
 npm run dev
 ```
 
-The Vite development server is available at `http://127.0.0.1:5173`.
+Open:
 
-Frontend environment variables:
+`http://127.0.0.1:5173`
 
-```text
-VITE_API_BASE_URL=http://127.0.0.1:5000
-VITE_API_PROXY_TARGET=http://127.0.0.1:5000
-```
+Configure `VITE_API_BASE_URL` in `frontend/.env.local` if the backend runs at a different address.
 
-`VITE_API_BASE_URL` selects the browser API origin. As an alternative during
-development, set it to `/api` to use the Vite proxy and configure the proxy
-target with `VITE_API_PROXY_TARGET`.
-
-## Start the Flask backend
+### Running Tests
 
 ```bash
-source .venv/bin/activate
-python3 backend/run.py
+python -m pytest backend/tests -q
 ```
 
-The development server listens on `http://127.0.0.1:5000`. Debug mode is off by
-default. It loads processed JSON once at startup; it does not start ingestion.
+### Historical Data Ingestion
 
-For local development, use two terminals:
+To regenerate the January 2026 historical dataset:
 
 ```bash
-# Terminal 1
-source .venv/bin/activate
-python3 backend/run.py
-
-# Terminal 2
-cd frontend
-npm run dev
-```
-
-The backend permits browser requests only from explicitly configured origins.
-The defaults are `http://127.0.0.1:5173` and `http://localhost:5173`. Override
-them with a comma-separated `CORS_ALLOWED_ORIGINS` environment variable.
-
-## Environment variables
-
-| Variable | Used by | Purpose |
-| --- | --- | --- |
-| `PORT` | Backend | Gunicorn/Flask listen port; defaults to `5000` in the container and is supplied by Render. |
-| `HISTORICAL_DATA_ROOT` | Backend | Absolute processed-data directory; defaults to `backend/data/processed` outside containers. |
-| `FAIL_ON_DATA_LOAD_ERROR` | Backend | Set to `true` in production so missing or corrupt historical files stop startup. |
-| `CORS_ALLOWED_ORIGINS` | Backend | Comma-separated, exact browser origins allowed to call the API. Do not use `*` in production. |
-| `FLASK_DEBUG` | Local backend only | Optional local debug switch; it is unset/false in production. |
-| `VITE_API_BASE_URL` | Frontend build | Public backend origin, for example `https://wind-forecast-api.onrender.com`. |
-| `VITE_API_PROXY_TARGET` | Vite development only | Local target for requests made through Vite's `/api` proxy. |
-
-Vite variables are embedded at build time and must not contain secrets. This
-project requires no API key. For public builds, set `VITE_API_BASE_URL` to the
-deployed HTTPS backend origin, never a localhost value. As a safety guard, a
-production build ignores a loopback API value and falls back to same-origin
-`/api`; Vercel should always receive the explicit Render origin.
-
-## Docker setup
-
-Docker Compose builds a Gunicorn backend and an Nginx-served frontend. Nginx
-proxies same-origin `/api` requests to the backend container, so the browser UI
-is available at `http://127.0.0.1:3000` and the API remains directly available
-at `http://127.0.0.1:5000` for diagnostics.
-
-```bash
-docker compose build
-docker compose up -d
-docker compose ps
-
-curl http://127.0.0.1:5000/api/health
-curl 'http://127.0.0.1:5000/api/forecast?decision_date=2026-01-14&cutoff=12:00'
-curl 'http://127.0.0.1:5000/api/summary?cutoff=12:00'
-```
-
-Inspect and stop the stack with:
-
-```bash
-docker compose logs -f
-docker compose down
-```
-
-To build only the backend image from the repository root:
-
-```bash
-docker build -f backend/Dockerfile -t wind-forecast-backend .
-docker run --rm -p 5000:5000 \
-  -e CORS_ALLOWED_ORIGINS=http://127.0.0.1:5173 \
-  wind-forecast-backend
-```
-
-The backend image contains `backend/data/processed` but excludes raw API
-responses, the mutable ingestion manifest, tests, virtual environments, caches,
-and secrets. The application runs as an unprivileged user. Its production
-command is:
-
-```text
-gunicorn --bind 0.0.0.0:${PORT} --workers 2 --threads 4 --timeout 120 backend.run:app
-```
-
-## Production architecture
-
-```text
-Browser
-  ├── Vercel: static React/Vite assets
-  └── HTTPS JSON requests
-        └── Render: Gunicorn → Flask application factory
-              └── in-memory indexes loaded once from packaged processed JSON
-```
-
-Changing a date or cutoff reuses the loaded publication history. The API does
-not download data, write runtime data, or require a database. Invalid inputs and
-data-availability failures retain the API's structured JSON error format.
-
-## Deploy the backend to Render
-
-Deployment is prepared but is not performed automatically. After placing the
-reviewed repository in a Git provider:
-
-1. In Render, choose **New → Blueprint** and select the repository. The root
-   `render.yaml` selects the Docker runtime, `backend/Dockerfile`, repository
-   build context, and `/api/health` health check.
-2. Set `CORS_ALLOWED_ORIGINS` to the exact Vercel production origin, such as
-   `https://wind-forecast-intelligence.vercel.app` (no trailing slash). Add any
-   preview origin explicitly if it should be trusted.
-3. Keep `HISTORICAL_DATA_ROOT=/app/backend/data/processed` and
-   `FAIL_ON_DATA_LOAD_ERROR=true`. Render provides `PORT`; do not hardcode it.
-4. Create the service and confirm `/api/health` reports `status: "ok"` before
-   connecting the frontend.
-
-For a manual Render Web Service instead of the Blueprint, use:
-
-- Runtime: **Docker**
-- Repository root/build context: `.`
-- Dockerfile: `backend/Dockerfile`
-- Health check path: `/api/health`
-- Gunicorn start command: supplied by the Dockerfile `CMD` shown above
-
-All files below `backend/data/processed/fuelhh` and
-`backend/data/processed/windfor` are required deployment inputs. They must be
-present in the deployed revision; startup intentionally fails if they are
-missing or corrupt. Raw files are not needed by Render.
-
-## Deploy the frontend to Vercel
-
-1. Import the same repository into Vercel.
-2. Set **Root Directory** to `frontend`.
-3. Use framework preset **Vite**, build command `npm run build`, and output
-   directory `dist`.
-4. Add `VITE_API_BASE_URL=https://<your-render-service>.onrender.com` to the
-   Production environment (and Preview if desired).
-5. Deploy or redeploy so the build receives that variable.
-6. Copy the final Vercel origin into Render's `CORS_ALLOWED_ORIGINS`, then
-   restart the backend and verify the dashboard in the browser.
-
-`frontend/vercel.json` provides SPA fallback routing. The production bundle
-contains only the public API origin and no credentials or API keys.
-
-## Dashboard features
-
-- January portfolio MAE, RMSE, bias, WAPE, and matched-data coverage cards.
-- Decision date and Europe/London purchasing-cutoff controls.
-- Interactive hourly forecast-versus-actual chart with signed errors.
-- January daily MAE trend and over/underforecast distribution.
-- Selected-day metrics and a scrollable 24-hour audit table.
-- Explicit loading, API error, empty-data, and partial-coverage states.
-- Responsive desktop, tablet, and mobile layouts with accessible labels and
-  keyboard-operable controls.
-
-## REST API
-
-- `GET /api/health` reports service status, data availability, loaded record
-  counts, and the supported analysis period.
-- `GET /api/forecast?decision_date=2026-01-14&cutoff=12:00` returns the next-day
-  selected forecast, actuals, hourly signed errors, metrics, and coverage.
-- `GET /api/summary?cutoff=12:00` returns metrics calculated across all matched
-  January hours plus daily statistics.
-
-`decision_date` uses `YYYY-MM-DD` and must fall in January 2026. `cutoff` is a
-required Europe/London wall-clock time in 24-hour `HH:MM` format.
-
-Example response shape (numbers abbreviated):
-
-```json
-{
-  "decisionDate": "2026-01-14",
-  "deliveryDate": "2026-01-15",
-  "cutoff": "12:00",
-  "timezone": "Europe/London",
-  "selectedForecastPublicationTimes": ["2026-01-14T11:30:00Z"],
-  "metrics": {"mae": 1189.792, "rmse": 1289.019, "bias": 1189.792},
-  "coverage": {"expectedPeriods": 24, "matchedPeriods": 24},
-  "periods": []
-}
-```
-
-Errors use `forecast - actual`. MAE, RMSE, bias, WAPE, means, maximum absolute
-error, and classification counts use matched values only. WAPE is `null` when
-the sum of absolute actual generation is zero. Core calculations are unrounded;
-API floating-point presentation is rounded to three decimal places.
-
-## Run the validated small scope first
-
-The cutoff is required and interpreted as a `Europe/London` wall-clock time.
-The command below downloads only the 14 January decision / 15 January delivery
-sample and its bounded forecast lookback:
-
-```bash
-python3 backend/scripts/ingest_data.py \
-  --decision-start 2026-01-14 \
-  --decision-end 2026-01-14 \
-  --decision-cutoff 12:00
-```
-
-Inspect
-`backend/data/processed/reports/validation_2026-01-14_2026-01-14.json` and the
-manifest's `WINDFOR:2026-01-14` entry. Confirm 48 actuals, 584 records in that
-publication-date batch, 24 selected targets from 11:30 UTC, and 24 candidate
-matched hours against the Phase 2A observations before expanding scope.
-Use `--refresh` only when an existing successful batch should be downloaded
-again.
-
-## Run the complete January decision range
-
-The full range has been ingested successfully. To refresh or reproduce it,
-run:
-
-```bash
-python3 backend/scripts/ingest_data.py \
+python backend/scripts/ingest_data.py \
   --decision-start 2026-01-01 \
   --decision-end 2026-01-31 \
   --decision-cutoff 12:00
 ```
 
-Replace `12:00` with the actual procurement cutoff. Re-running the same command
-reuses successful daily batches. Failed attempts are recorded and never appear
-as successful empty data.
+The ingestion pipeline preserves source records, handles transient API failures, detects conflicts, and generates validation reports.
 
-## Storage format
+## REST API
 
-```text
-backend/data/
-├── manifest.json
-├── raw/
-│   ├── fuelhh/YYYY-MM-DD.json
-│   └── windfor/YYYY-MM-DD.json
-└── processed/
-    ├── fuelhh/YYYY-MM-DD.json
-    ├── windfor/YYYY-MM-DD.json
-    └── reports/validation_<start>_<end>.json
+| Endpoint | Purpose |
+|---|---|
+| `GET /api/health` | Service and historical-data availability |
+| `GET /api/summary?cutoff=12:00` | January aggregate metrics and daily accuracy |
+| `GET /api/forecast?decision_date=2026-01-14&cutoff=12:00` | Selected-day forecast, actual generation, errors, and coverage |
+
+All purchasing cutoff times are interpreted in `Europe/London`.
+
+## Docker and Deployment
+
+The project includes Docker configuration for containerized execution.
+
+For local container testing:
+
+```bash
+docker compose build
+docker compose up -d
 ```
 
-Raw files retain untouched API rows plus exact requests. Processed files retain
-canonical UTC timestamps, original records, provenance, duplicate information,
-and warnings. Writes use temporary files and atomic replacement.
+The intended public deployment uses Render for the Flask API and Vercel for the React frontend.
 
-For deployment, the processed files are the canonical packaged runtime input.
-The raw directory and manifest support local reproducibility but are excluded
-from container build contexts and new Git additions to keep deployments small.
+Production configuration requires the historical processed JSON files to be packaged with the backend, an appropriately configured `VITE_API_BASE_URL`, and a restricted `CORS_ALLOWED_ORIGINS` allowlist.
 
-## Data and analysis policies
+## Design Decisions
 
-- WINDFOR uses a configurable 72-hour default publication lookback. The
-  documented D-to-D+2 horizon shows why decision-date-only retrieval is not
-  sufficient. Boundary dependence and missing hourly targets are reported;
-  complete history is never assumed.
-- WINDFOR revisions remain separate by `(publishTime, startTime)`. Negative
-  lead rows remain in raw and processed data for diagnostics.
-- FUELHH uses the greatest `publishTime` as a reproducible proxy for the latest
-  actual revision because the verified schema has no finality flag. Conflicting
-  latest rows are not chosen.
-- Candidate hourly actual MW is the mean of complete aligned `HH:00` and
-  `HH:30` half-hour average-MW observations. Missing values are not filled.
-  This remains provisional pending confirmation of WINDFOR interval semantics.
-- For every hourly delivery target, selection uses the greatest historical
-  `publishTime` at or before the requested cutoff. Later publications and
-  conflicting latest duplicates are never selected.
-- Monthly metrics are recalculated from all matched hourly errors; daily metric
-  values are not averaged together.
+- **No look-ahead bias:** Only forecasts available by the selected decision time are eligible.
+- **Historical reproducibility:** Preserve forecast publication history rather than replacing older forecasts.
+- **Simple data architecture:** Use preprocessed JSON instead of introducing an unnecessary database for a fixed historical analysis.
+- **Reliable missing-data handling:** Exclude incomplete matches and report coverage.
+- **Separation of concerns:** Keep ingestion, forecast selection, metrics calculation, API delivery, and UI presentation independent.
 
-See [data exploration](docs/DATA_EXPLORATION.md),
-[architecture](docs/ARCHITECTURE.md), and
-[assumptions](docs/ASSUMPTIONS.md) for rationale and limitations.
+For further details, see [Architecture](docs/ARCHITECTURE.md), [Data Exploration](docs/DATA_EXPLORATION.md), and [Assumptions](docs/ASSUMPTIONS.md).
 
-## Known limitations
+## Limitations
 
-- The dashboard covers January 2026 decision dates only.
-- Hourly actuals use complete pairs of FUELHH half-hour readings; WINDFOR
-  interval semantics remain a documented assumption.
-- Forecast accuracy is not a financial-impact measure because electricity
-  prices and purchasing volumes are not included.
-- The frontend is a read-only analytical client and does not trigger ingestion.
-- The January 2026 processed dataset is packaged into the backend image; adding
-  another analysis period requires a new ingestion run and image deployment.
-- Render free-tier services, if selected, may cold-start; this is hosting
-  behavior rather than missing historical data.
+- The analysis is restricted to January 2026 purchasing decisions.
+- WINDFOR hourly target interpretation remains a documented assumption.
+- The latest available FUELHH publication is used as a proxy for the actual generation revision policy.
+- Forecast errors do not directly imply financial loss without purchasing volume and market price information.
+- Accuracy coverage may vary when the decision cutoff changes.
 
-## AI-assisted development disclosure
+## AI-Assisted Development
 
-OpenAI Codex was used as an AI-assisted development tool for implementation,
-review, tests, documentation, and deployment preparation. The project owner is
-responsible for reviewing the code and deployment configuration. Dashboard
-runtime values come from the packaged historical Elexon dataset; synthetic data
-is restricted to isolated tests and is not presented as production history.
+AI coding tools were used to assist with project scaffolding, implementation, test generation, code review, and documentation.
+
+The project was developed through an iterative workflow involving API exploration, live Elexon data validation, cutoff-selection checks, local integration testing, and manual dashboard review.
+
+AI-generated implementation details were checked against the available historical data and documented assumptions. Any remaining unverified behavior is disclosed rather than presented as established fact.
+
+## Data Attribution
+
+Historical forecast and generation data is sourced from [Elexon BMRS](https://bmrs.elexon.co.uk/).
+
+This is an independent technical demonstration and is not affiliated with Elexon.
