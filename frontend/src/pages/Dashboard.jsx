@@ -5,6 +5,7 @@ import Header from '../components/layout/Header.jsx'
 import SectionCard from '../components/layout/SectionCard.jsx'
 import { ErrorNotice, LoadingBlock } from '../components/layout/Feedback.jsx'
 import ExecutiveOverview from '../components/cards/ExecutiveOverview.jsx'
+import BusinessInsights from '../components/cards/BusinessInsights.jsx'
 import DecisionControls from '../components/filters/DecisionControls.jsx'
 import ForecastActualChart from '../components/charts/ForecastActualChart.jsx'
 import DailyMaeChart from '../components/charts/DailyMaeChart.jsx'
@@ -117,13 +118,15 @@ export default function Dashboard() {
           <ExecutiveOverview summary={summary} />
         ) : null}
 
+        {summary && <BusinessInsights summary={summary} />}
+
         {partialCoverage && (
           <div className="feedback partial-feedback" role="status">
             This delivery day has partial coverage: {daily.coverage.matchedPeriods} of {daily.coverage.expectedPeriods} hours are matched. Missing periods remain visible and are excluded from metrics.
           </div>
         )}
 
-        <div className={`dashboard-grid chart-grid ${dailyLoading ? 'is-updating' : ''}`}>
+        <div className={`dashboard-grid chart-grid main-chart-grid ${dailyLoading ? 'is-updating' : ''}`}>
           <SectionCard
             className="span-two"
             title="Forecast vs actual generation"

@@ -21,9 +21,16 @@ DEFAULT_PROCESSED_ROOT = Path(__file__).resolve().parents[1] / "data" / "process
 def create_app(test_config: dict[str, Any] | None = None) -> Flask:
     app = Flask(__name__)
     app.config.from_mapping(
-        DATA_ROOT=str(DEFAULT_PROCESSED_ROOT),
+        DATA_ROOT=os.environ.get(
+            "HISTORICAL_DATA_ROOT",
+            str(DEFAULT_PROCESSED_ROOT),
+        ),
         JSON_SORT_KEYS=False,
         LOAD_HISTORICAL_DATA=True,
+        FAIL_ON_DATA_LOAD_ERROR=_environment_flag(
+            "FAIL_ON_DATA_LOAD_ERROR",
+            default=False,
+        ),
         CORS_ALLOWED_ORIGINS=os.environ.get(
             "CORS_ALLOWED_ORIGINS",
             "http://127.0.0.1:5173,http://localhost:5173",
@@ -42,6 +49,8 @@ def create_app(test_config: dict[str, Any] | None = None) -> Flask:
         except HistoricalDataError as exc:
             load_error = exc
             LOGGER.error("Historical data could not be loaded: %s", exc)
+            if app.config["FAIL_ON_DATA_LOAD_ERROR"]:
+                raise
 
     app.extensions["historical_data_store"] = store
     app.extensions["historical_data_error"] = load_error
@@ -55,6 +64,13 @@ def create_app(test_config: dict[str, Any] | None = None) -> Flask:
     _register_cors(app)
     _register_error_handlers(app)
     return app
+
+
+def _environment_flag(name: str, *, default: bool) -> bool:
+    value = os.environ.get(name)
+    if value is None:
+        return default
+    return value.strip().lower() in {"1", "true", "yes", "on"}
 
 
 def _register_cors(app: Flask) -> None:

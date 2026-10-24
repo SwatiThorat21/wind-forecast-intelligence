@@ -7,7 +7,10 @@ from datetime import datetime, timedelta, timezone
 import pytest
 
 from backend.app import create_app
-from backend.app.services.data_store import HistoricalDataStore
+from backend.app.services.data_store import (
+    HistoricalDataStore,
+    HistoricalDataUnavailableError,
+)
 
 
 UTC = timezone.utc
@@ -101,3 +104,13 @@ def test_missing_data_returns_503() -> None:
     )
     assert response.status_code == 503
     assert response.get_json()["error"]["code"] == "historical_data_unavailable"
+
+
+def test_production_startup_fails_when_required_data_is_missing(tmp_path) -> None:
+    with pytest.raises(HistoricalDataUnavailableError, match="directory is missing"):
+        create_app(
+            {
+                "DATA_ROOT": str(tmp_path),
+                "FAIL_ON_DATA_LOAD_ERROR": True,
+            }
+        )

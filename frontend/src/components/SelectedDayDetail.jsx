@@ -38,9 +38,9 @@ export default function SelectedDayDetail({ analysis }) {
             <thead>
               <tr>
                 <th scope="col">Delivery hour</th>
-                <th scope="col">Forecast MW</th>
-                <th scope="col">Actual MW</th>
-                <th scope="col">Signed error</th>
+                <th scope="col" className="numeric-column">Forecast MW</th>
+                <th scope="col" className="numeric-column">Actual MW</th>
+                <th scope="col" className="numeric-column">Signed error</th>
                 <th scope="col">Forecast publication</th>
               </tr>
             </thead>
@@ -48,9 +48,9 @@ export default function SelectedDayDetail({ analysis }) {
               {periods.map((period) => (
                 <tr key={period.targetTime}>
                   <td><strong>{formatDeliveryHour(period)}</strong></td>
-                  <td>{formatMetric(period.forecastMw, 'MW')}</td>
-                  <td>{formatMetric(period.actualMw, 'MW')}</td>
-                  <td className={period.errorMw > 0 ? 'error-positive' : period.errorMw < 0 ? 'error-negative' : ''}>{formatSigned(period.errorMw)}</td>
+                  <td className="numeric-column">{formatMetric(period.forecastMw, 'MW')}</td>
+                  <td className="numeric-column">{formatMetric(period.actualMw, 'MW')}</td>
+                  <td className="numeric-column"><span className={`error-value ${period.errorMw > 0 ? 'error-positive' : period.errorMw < 0 ? 'error-negative' : ''}`}>{formatSigned(period.errorMw)}</span></td>
                   <td>{formatTimestamp(period.forecastPublishTime)}</td>
                 </tr>
               ))}

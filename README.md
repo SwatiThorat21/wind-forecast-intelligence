@@ -7,11 +7,11 @@ following Europe/London calendar date, including 1 February.
 
 ## Current status
 
-Phase 4 adds a responsive React/Vite analytics dashboard to the completed Flask
-analysis backend. The interface includes portfolio KPIs, cutoff-aware decision
-controls, hourly forecast-versus-actual analysis, January error trends, bias
-distribution, hourly detail, and methodology disclosures. Docker and deployment
-remain out of scope.
+Phase 5 packages the completed React/Vite dashboard and Flask analysis API for
+repeatable local containers and public deployment preparation. The backend runs
+under Gunicorn, the frontend is built as static assets, CORS is origin-limited,
+and the verified processed Elexon dataset is packaged with the API. No service
+performs ingestion or live Elexon requests while serving dashboard traffic.
 
 The Phase 2A local probe verified 48 half-hour WIND actuals for 15 January and
 584 WINDFOR rows across eight 14 January publications. At a 12:00 UTC cutoff,
@@ -22,7 +22,7 @@ The completed full-month ingestion contains 1,488 FUELHH rows and 19,856
 WINDFOR rows with no failed or incomplete batches. At a 12:00 cutoff, all 744
 January decision/delivery hours are matched.
 
-## Backend setup and tests
+## Local development setup
 
 Python 3.11 or newer is required. From the repository root:
 
@@ -42,7 +42,7 @@ From the repository root:
 ```bash
 cd frontend
 npm install
-cp .env.example .env.local
+cp .env.example .env.development.local
 npm run dev
 ```
 
@@ -66,8 +66,8 @@ source .venv/bin/activate
 python3 backend/run.py
 ```
 
-The development server listens on `http://127.0.0.1:5000`. It loads processed
-JSON at startup; it does not start ingestion.
+The development server listens on `http://127.0.0.1:5000`. Debug mode is off by
+default. It loads processed JSON once at startup; it does not start ingestion.
 
 For local development, use two terminals:
 
@@ -84,6 +84,124 @@ npm run dev
 The backend permits browser requests only from explicitly configured origins.
 The defaults are `http://127.0.0.1:5173` and `http://localhost:5173`. Override
 them with a comma-separated `CORS_ALLOWED_ORIGINS` environment variable.
+
+## Environment variables
+
+| Variable | Used by | Purpose |
+| --- | --- | --- |
+| `PORT` | Backend | Gunicorn/Flask listen port; defaults to `5000` in the container and is supplied by Render. |
+| `HISTORICAL_DATA_ROOT` | Backend | Absolute processed-data directory; defaults to `backend/data/processed` outside containers. |
+| `FAIL_ON_DATA_LOAD_ERROR` | Backend | Set to `true` in production so missing or corrupt historical files stop startup. |
+| `CORS_ALLOWED_ORIGINS` | Backend | Comma-separated, exact browser origins allowed to call the API. Do not use `*` in production. |
+| `FLASK_DEBUG` | Local backend only | Optional local debug switch; it is unset/false in production. |
+| `VITE_API_BASE_URL` | Frontend build | Public backend origin, for example `https://wind-forecast-api.onrender.com`. |
+| `VITE_API_PROXY_TARGET` | Vite development only | Local target for requests made through Vite's `/api` proxy. |
+
+Vite variables are embedded at build time and must not contain secrets. This
+project requires no API key. For public builds, set `VITE_API_BASE_URL` to the
+deployed HTTPS backend origin, never a localhost value. As a safety guard, a
+production build ignores a loopback API value and falls back to same-origin
+`/api`; Vercel should always receive the explicit Render origin.
+
+## Docker setup
+
+Docker Compose builds a Gunicorn backend and an Nginx-served frontend. Nginx
+proxies same-origin `/api` requests to the backend container, so the browser UI
+is available at `http://127.0.0.1:3000` and the API remains directly available
+at `http://127.0.0.1:5000` for diagnostics.
+
+```bash
+docker compose build
+docker compose up -d
+docker compose ps
+
+curl http://127.0.0.1:5000/api/health
+curl 'http://127.0.0.1:5000/api/forecast?decision_date=2026-01-14&cutoff=12:00'
+curl 'http://127.0.0.1:5000/api/summary?cutoff=12:00'
+```
+
+Inspect and stop the stack with:
+
+```bash
+docker compose logs -f
+docker compose down
+```
+
+To build only the backend image from the repository root:
+
+```bash
+docker build -f backend/Dockerfile -t wind-forecast-backend .
+docker run --rm -p 5000:5000 \
+  -e CORS_ALLOWED_ORIGINS=http://127.0.0.1:5173 \
+  wind-forecast-backend
+```
+
+The backend image contains `backend/data/processed` but excludes raw API
+responses, the mutable ingestion manifest, tests, virtual environments, caches,
+and secrets. The application runs as an unprivileged user. Its production
+command is:
+
+```text
+gunicorn --bind 0.0.0.0:${PORT} --workers 2 --threads 4 --timeout 120 backend.run:app
+```
+
+## Production architecture
+
+```text
+Browser
+  ├── Vercel: static React/Vite assets
+  └── HTTPS JSON requests
+        └── Render: Gunicorn → Flask application factory
+              └── in-memory indexes loaded once from packaged processed JSON
+```
+
+Changing a date or cutoff reuses the loaded publication history. The API does
+not download data, write runtime data, or require a database. Invalid inputs and
+data-availability failures retain the API's structured JSON error format.
+
+## Deploy the backend to Render
+
+Deployment is prepared but is not performed automatically. After placing the
+reviewed repository in a Git provider:
+
+1. In Render, choose **New → Blueprint** and select the repository. The root
+   `render.yaml` selects the Docker runtime, `backend/Dockerfile`, repository
+   build context, and `/api/health` health check.
+2. Set `CORS_ALLOWED_ORIGINS` to the exact Vercel production origin, such as
+   `https://wind-forecast-intelligence.vercel.app` (no trailing slash). Add any
+   preview origin explicitly if it should be trusted.
+3. Keep `HISTORICAL_DATA_ROOT=/app/backend/data/processed` and
+   `FAIL_ON_DATA_LOAD_ERROR=true`. Render provides `PORT`; do not hardcode it.
+4. Create the service and confirm `/api/health` reports `status: "ok"` before
+   connecting the frontend.
+
+For a manual Render Web Service instead of the Blueprint, use:
+
+- Runtime: **Docker**
+- Repository root/build context: `.`
+- Dockerfile: `backend/Dockerfile`
+- Health check path: `/api/health`
+- Gunicorn start command: supplied by the Dockerfile `CMD` shown above
+
+All files below `backend/data/processed/fuelhh` and
+`backend/data/processed/windfor` are required deployment inputs. They must be
+present in the deployed revision; startup intentionally fails if they are
+missing or corrupt. Raw files are not needed by Render.
+
+## Deploy the frontend to Vercel
+
+1. Import the same repository into Vercel.
+2. Set **Root Directory** to `frontend`.
+3. Use framework preset **Vite**, build command `npm run build`, and output
+   directory `dist`.
+4. Add `VITE_API_BASE_URL=https://<your-render-service>.onrender.com` to the
+   Production environment (and Preview if desired).
+5. Deploy or redeploy so the build receives that variable.
+6. Copy the final Vercel origin into Render's `CORS_ALLOWED_ORIGINS`, then
+   restart the backend and verify the dashboard in the browser.
+
+`frontend/vercel.json` provides SPA fallback routing. The production bundle
+contains only the public API origin and no credentials or API keys.
 
 ## Dashboard features
 
@@ -183,6 +301,10 @@ Raw files retain untouched API rows plus exact requests. Processed files retain
 canonical UTC timestamps, original records, provenance, duplicate information,
 and warnings. Writes use temporary files and atomic replacement.
 
+For deployment, the processed files are the canonical packaged runtime input.
+The raw directory and manifest support local reproducibility but are excluded
+from container build contexts and new Git additions to keep deployments small.
+
 ## Data and analysis policies
 
 - WINDFOR uses a configurable 72-hour default publication lookback. The
@@ -215,3 +337,15 @@ See [data exploration](docs/DATA_EXPLORATION.md),
 - Forecast accuracy is not a financial-impact measure because electricity
   prices and purchasing volumes are not included.
 - The frontend is a read-only analytical client and does not trigger ingestion.
+- The January 2026 processed dataset is packaged into the backend image; adding
+  another analysis period requires a new ingestion run and image deployment.
+- Render free-tier services, if selected, may cold-start; this is hosting
+  behavior rather than missing historical data.
+
+## AI-assisted development disclosure
+
+OpenAI Codex was used as an AI-assisted development tool for implementation,
+review, tests, documentation, and deployment preparation. The project owner is
+responsible for reviewing the code and deployment configuration. Dashboard
+runtime values come from the packaged historical Elexon dataset; synthetic data
+is restricted to isolated tests and is not presented as production history.

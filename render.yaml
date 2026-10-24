@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://render.com/schema/render.yaml.json
+services:
+  - type: web
+    name: wind-forecast-intelligence-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: HISTORICAL_DATA_ROOT
+        value: /app/backend/data/processed
+      - key: FAIL_ON_DATA_LOAD_ERROR
+        value: "true"
+      - key: CORS_ALLOWED_ORIGINS
+        sync: false

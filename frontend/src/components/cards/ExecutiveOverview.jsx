@@ -17,8 +17,8 @@ export default function ExecutiveOverview({ summary }) {
     { icon: Target, label: 'MAE', value: formatMetric(metrics.mae, 'MW'), detail: 'Average absolute hourly forecast error' },
     { icon: Activity, label: 'RMSE', value: formatMetric(metrics.rmse, 'MW'), detail: 'Penalises larger forecast misses', tone: 'navy' },
     { icon: Scale, label: 'Forecast Bias', value: formatMetric(metrics.bias, 'MW'), detail: biasDescription(metrics.bias), tone: metrics.bias > 0 ? 'amber' : 'teal' },
-    { icon: Percent, label: 'WAPE', value: formatMetric(metrics.wape, '%'), detail: 'Absolute error relative to actual generation', tone: 'navy' },
-    { icon: Gauge, label: 'Data Coverage', value: formatMetric(coverage, '%'), detail: `${summary?.coverage?.matchedPeriods ?? '—'} of ${summary?.coverage?.expectedPeriods ?? '—'} expected hourly periods matched` },
+    { icon: Percent, label: 'WAPE', value: formatMetric(metrics.wape, '%'), detail: 'Absolute error relative to actual generation' },
+    { icon: Gauge, label: 'Data Coverage', value: formatMetric(coverage, '%'), detail: `${summary?.coverage?.matchedPeriods ?? '—'} of ${summary?.coverage?.expectedPeriods ?? '—'} expected hourly periods matched`, tone: 'green' },
   ]
 
   return (

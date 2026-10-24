@@ -1,8 +1,8 @@
 import {
-  Area,
-  AreaChart,
+  Bar,
+  BarChart,
   CartesianGrid,
-  ReferenceLine,
+  Cell,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -38,27 +38,17 @@ export default function DailyMaeChart({ days = [], selectedDate }) {
   return (
     <div className="chart-container chart-container-small" role="img" aria-label="January daily mean absolute error trend">
       <ResponsiveContainer width="100%" height="100%">
-        <AreaChart data={data} margin={{ top: 12, right: 10, left: 0, bottom: 0 }} accessibilityLayer>
-          <defs>
-            <linearGradient id="maeFill" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#0D9488" stopOpacity={0.24} />
-              <stop offset="100%" stopColor="#0D9488" stopOpacity={0.02} />
-            </linearGradient>
-          </defs>
-          <CartesianGrid stroke="#E7ECF2" strokeDasharray="4 5" vertical={false} />
-          <XAxis dataKey="day" tick={{ fill: '#65758B', fontSize: 12 }} tickLine={false} axisLine={{ stroke: '#DCE3EB' }} interval={4} />
-          <YAxis tick={{ fill: '#65758B', fontSize: 12 }} tickLine={false} axisLine={false} tickFormatter={(value) => `${Math.round(value / 1000)}k`} width={42} />
+        <BarChart data={data} margin={{ top: 10, right: 8, left: 0, bottom: 0 }} accessibilityLayer>
+          <CartesianGrid stroke="#E7ECF2" strokeDasharray="3 5" vertical={false} />
+          <XAxis dataKey="day" tick={{ fill: '#65758B', fontSize: 11 }} tickLine={false} axisLine={{ stroke: '#DCE3EB' }} interval={3} />
+          <YAxis tick={{ fill: '#65758B', fontSize: 11 }} tickLine={false} axisLine={false} tickFormatter={(value) => `${Math.round(value / 1000)}k`} width={40} />
           <Tooltip content={<TrendTooltip />} />
-          {selectedDate && (
-            <ReferenceLine
-              x={Number(selectedDate.slice(-2))}
-              stroke="#14243A"
-              strokeDasharray="3 4"
-              strokeOpacity={0.45}
-            />
-          )}
-          <Area type="monotone" dataKey="mae" stroke="#0D9488" strokeWidth={2.5} fill="url(#maeFill)" connectNulls={false} activeDot={{ r: 5, fill: '#0D9488', stroke: '#FFFFFF', strokeWidth: 2 }} />
-        </AreaChart>
+          <Bar dataKey="mae" name="Daily MAE" fill="#42A79D" radius={[3, 3, 0, 0]} maxBarSize={18}>
+            {data.map((row) => (
+              <Cell key={row.date} fill={row.date === selectedDate ? '#14243A' : '#42A79D'} />
+            ))}
+          </Bar>
+        </BarChart>
       </ResponsiveContainer>
       <div className="chart-axis-caption">Decision date · January 2026</div>
       {selectedDate && <span className="sr-only">Currently selected decision date: {selectedDate}</span>}

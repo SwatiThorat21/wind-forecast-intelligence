@@ -1,7 +1,7 @@
 import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
 import { formatNumber } from '../../utils/formatters.js'
 
-const COLORS = ['#E07A5F', '#2F5D7C', '#94A3B8']
+const COLORS = ['#C88732', '#3F6F8F', '#7AA99F']
 
 function BiasTooltip({ active, payload }) {
   if (!active || !payload?.length) return null
