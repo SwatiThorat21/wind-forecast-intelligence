@@ -78,7 +78,7 @@ The endpoint defines only:
 - `publishDateTimeFrom` (`date-time`)
 - `publishDateTimeTo` (`date-time`)
 
-If no publication-time filter is supplied, the documentation says the latest published forecast is returned. There is no raw `startTime` query filter in this endpoint contract. Phase 2 must therefore request bounded publication windows, then filter target `startTime` locally for the required delivery day.
+If no publication-time filter is supplied, the documentation says the latest published forecast is returned. There is no raw `startTime` query filter in this endpoint contract. Phase 2B therefore requests bounded publication windows, then filters target `startTime` locally for the required delivery day.
 
 Verified request shape:
 
@@ -149,6 +149,13 @@ The locally executed probe established the following for its bounded sample:
 The probe's single publication date does not prove that earlier publications
 are unnecessary for every cutoff. In particular, a cutoff before the first
 same-day publication can depend on a previous day's forecast.
+
+The 15 January FUELHH sample exposed one row per settlement period and no
+duplicate `(startTime, fuelType)` keys. Neither the verified API schema nor the
+sample provides a finality indicator, so it remains unproven whether a
+settlement-date query exposes every historical outturn revision. Phase 2B keeps
+all versions it receives and uses greatest `publishTime` only as an explicit
+latest-available proxy; a later retrieval snapshot may still differ.
 
 ## Publication lookback investigation and policy
 

@@ -1,0 +1,1362 @@
+{
+  "batch_id": "2026-01-08",
+  "dataset": "FUELHH",
+  "normalization": {
+    "conflicting_duplicate_count": 0,
+    "exact_duplicate_count": 0,
+    "invalid_record_count": 0,
+    "null_generation_count": 0,
+    "record_count": 48,
+    "warning_count": 0
+  },
+  "normalized_at": "2026-10-24T14:05:31.320946Z",
+  "record_count": 48,
+  "records": [
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 9244,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 9244,
+        "publishTime": "2026-01-09T00:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 48,
+        "startTime": "2026-01-08T23:30:00Z"
+      },
+      "publish_time": "2026-01-09T00:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 48,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        0
+      ],
+      "start_time": "2026-01-08T23:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 9809,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 9809,
+        "publishTime": "2026-01-08T23:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 47,
+        "startTime": "2026-01-08T23:00:00Z"
+      },
+      "publish_time": "2026-01-08T23:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 47,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        1
+      ],
+      "start_time": "2026-01-08T23:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 9944,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 9944,
+        "publishTime": "2026-01-08T23:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 46,
+        "startTime": "2026-01-08T22:30:00Z"
+      },
+      "publish_time": "2026-01-08T23:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 46,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        2
+      ],
+      "start_time": "2026-01-08T22:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 9964,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 9964,
+        "publishTime": "2026-01-08T22:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 45,
+        "startTime": "2026-01-08T22:00:00Z"
+      },
+      "publish_time": "2026-01-08T22:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 45,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        3
+      ],
+      "start_time": "2026-01-08T22:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 10266,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 10266,
+        "publishTime": "2026-01-08T22:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 44,
+        "startTime": "2026-01-08T21:30:00Z"
+      },
+      "publish_time": "2026-01-08T22:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 44,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        4
+      ],
+      "start_time": "2026-01-08T21:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 10622,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 10622,
+        "publishTime": "2026-01-08T21:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 43,
+        "startTime": "2026-01-08T21:00:00Z"
+      },
+      "publish_time": "2026-01-08T21:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 43,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        5
+      ],
+      "start_time": "2026-01-08T21:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 10700,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 10700,
+        "publishTime": "2026-01-08T21:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 42,
+        "startTime": "2026-01-08T20:30:00Z"
+      },
+      "publish_time": "2026-01-08T21:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 42,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        6
+      ],
+      "start_time": "2026-01-08T20:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 10609,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 10609,
+        "publishTime": "2026-01-08T20:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 41,
+        "startTime": "2026-01-08T20:00:00Z"
+      },
+      "publish_time": "2026-01-08T20:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 41,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        7
+      ],
+      "start_time": "2026-01-08T20:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 10202,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 10202,
+        "publishTime": "2026-01-08T20:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 40,
+        "startTime": "2026-01-08T19:30:00Z"
+      },
+      "publish_time": "2026-01-08T20:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 40,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        8
+      ],
+      "start_time": "2026-01-08T19:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 9880,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 9880,
+        "publishTime": "2026-01-08T19:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 39,
+        "startTime": "2026-01-08T19:00:00Z"
+      },
+      "publish_time": "2026-01-08T19:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 39,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        9
+      ],
+      "start_time": "2026-01-08T19:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 9184,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 9184,
+        "publishTime": "2026-01-08T19:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 38,
+        "startTime": "2026-01-08T18:30:00Z"
+      },
+      "publish_time": "2026-01-08T19:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 38,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        10
+      ],
+      "start_time": "2026-01-08T18:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 8000,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 8000,
+        "publishTime": "2026-01-08T18:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 37,
+        "startTime": "2026-01-08T18:00:00Z"
+      },
+      "publish_time": "2026-01-08T18:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 37,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        11
+      ],
+      "start_time": "2026-01-08T18:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 6741,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 6741,
+        "publishTime": "2026-01-08T18:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 36,
+        "startTime": "2026-01-08T17:30:00Z"
+      },
+      "publish_time": "2026-01-08T18:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 36,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        12
+      ],
+      "start_time": "2026-01-08T17:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 5652,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 5652,
+        "publishTime": "2026-01-08T17:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 35,
+        "startTime": "2026-01-08T17:00:00Z"
+      },
+      "publish_time": "2026-01-08T17:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 35,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        13
+      ],
+      "start_time": "2026-01-08T17:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 4679,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 4679,
+        "publishTime": "2026-01-08T17:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 34,
+        "startTime": "2026-01-08T16:30:00Z"
+      },
+      "publish_time": "2026-01-08T17:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 34,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        14
+      ],
+      "start_time": "2026-01-08T16:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 3944,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 3944,
+        "publishTime": "2026-01-08T16:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 33,
+        "startTime": "2026-01-08T16:00:00Z"
+      },
+      "publish_time": "2026-01-08T16:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 33,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        15
+      ],
+      "start_time": "2026-01-08T16:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 3212,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 3212,
+        "publishTime": "2026-01-08T16:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 32,
+        "startTime": "2026-01-08T15:30:00Z"
+      },
+      "publish_time": "2026-01-08T16:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 32,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        16
+      ],
+      "start_time": "2026-01-08T15:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 2585,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 2585,
+        "publishTime": "2026-01-08T15:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 31,
+        "startTime": "2026-01-08T15:00:00Z"
+      },
+      "publish_time": "2026-01-08T15:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 31,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        17
+      ],
+      "start_time": "2026-01-08T15:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 2241,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 2241,
+        "publishTime": "2026-01-08T15:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 30,
+        "startTime": "2026-01-08T14:30:00Z"
+      },
+      "publish_time": "2026-01-08T15:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 30,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        18
+      ],
+      "start_time": "2026-01-08T14:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 2083,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 2083,
+        "publishTime": "2026-01-08T14:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 29,
+        "startTime": "2026-01-08T14:00:00Z"
+      },
+      "publish_time": "2026-01-08T14:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 29,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        19
+      ],
+      "start_time": "2026-01-08T14:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 1924,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 1924,
+        "publishTime": "2026-01-08T14:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 28,
+        "startTime": "2026-01-08T13:30:00Z"
+      },
+      "publish_time": "2026-01-08T14:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 28,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        20
+      ],
+      "start_time": "2026-01-08T13:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 1792,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 1792,
+        "publishTime": "2026-01-08T13:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 27,
+        "startTime": "2026-01-08T13:00:00Z"
+      },
+      "publish_time": "2026-01-08T13:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 27,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        21
+      ],
+      "start_time": "2026-01-08T13:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 1695,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 1695,
+        "publishTime": "2026-01-08T13:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 26,
+        "startTime": "2026-01-08T12:30:00Z"
+      },
+      "publish_time": "2026-01-08T13:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 26,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        22
+      ],
+      "start_time": "2026-01-08T12:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 1728,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 1728,
+        "publishTime": "2026-01-08T12:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 25,
+        "startTime": "2026-01-08T12:00:00Z"
+      },
+      "publish_time": "2026-01-08T12:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 25,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        23
+      ],
+      "start_time": "2026-01-08T12:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 1730,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 1730,
+        "publishTime": "2026-01-08T12:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 24,
+        "startTime": "2026-01-08T11:30:00Z"
+      },
+      "publish_time": "2026-01-08T12:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 24,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        24
+      ],
+      "start_time": "2026-01-08T11:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 1814,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 1814,
+        "publishTime": "2026-01-08T11:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 23,
+        "startTime": "2026-01-08T11:00:00Z"
+      },
+      "publish_time": "2026-01-08T11:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 23,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        25
+      ],
+      "start_time": "2026-01-08T11:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 1978,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 1978,
+        "publishTime": "2026-01-08T11:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 22,
+        "startTime": "2026-01-08T10:30:00Z"
+      },
+      "publish_time": "2026-01-08T11:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 22,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        26
+      ],
+      "start_time": "2026-01-08T10:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 2112,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 2112,
+        "publishTime": "2026-01-08T10:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 21,
+        "startTime": "2026-01-08T10:00:00Z"
+      },
+      "publish_time": "2026-01-08T10:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 21,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        27
+      ],
+      "start_time": "2026-01-08T10:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 2267,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 2267,
+        "publishTime": "2026-01-08T10:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 20,
+        "startTime": "2026-01-08T09:30:00Z"
+      },
+      "publish_time": "2026-01-08T10:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 20,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        28
+      ],
+      "start_time": "2026-01-08T09:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 2178,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 2178,
+        "publishTime": "2026-01-08T09:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 19,
+        "startTime": "2026-01-08T09:00:00Z"
+      },
+      "publish_time": "2026-01-08T09:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 19,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        29
+      ],
+      "start_time": "2026-01-08T09:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 1935,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 1935,
+        "publishTime": "2026-01-08T09:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 18,
+        "startTime": "2026-01-08T08:30:00Z"
+      },
+      "publish_time": "2026-01-08T09:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 18,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        30
+      ],
+      "start_time": "2026-01-08T08:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 1922,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 1922,
+        "publishTime": "2026-01-08T08:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 17,
+        "startTime": "2026-01-08T08:00:00Z"
+      },
+      "publish_time": "2026-01-08T08:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 17,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        31
+      ],
+      "start_time": "2026-01-08T08:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 1900,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 1900,
+        "publishTime": "2026-01-08T08:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 16,
+        "startTime": "2026-01-08T07:30:00Z"
+      },
+      "publish_time": "2026-01-08T08:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 16,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        32
+      ],
+      "start_time": "2026-01-08T07:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 1835,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 1835,
+        "publishTime": "2026-01-08T07:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 15,
+        "startTime": "2026-01-08T07:00:00Z"
+      },
+      "publish_time": "2026-01-08T07:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 15,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        33
+      ],
+      "start_time": "2026-01-08T07:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 1747,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 1747,
+        "publishTime": "2026-01-08T07:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 14,
+        "startTime": "2026-01-08T06:30:00Z"
+      },
+      "publish_time": "2026-01-08T07:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 14,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        34
+      ],
+      "start_time": "2026-01-08T06:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 2009,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 2009,
+        "publishTime": "2026-01-08T06:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 13,
+        "startTime": "2026-01-08T06:00:00Z"
+      },
+      "publish_time": "2026-01-08T06:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 13,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        35
+      ],
+      "start_time": "2026-01-08T06:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 2164,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 2164,
+        "publishTime": "2026-01-08T06:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 12,
+        "startTime": "2026-01-08T05:30:00Z"
+      },
+      "publish_time": "2026-01-08T06:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 12,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        36
+      ],
+      "start_time": "2026-01-08T05:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 2281,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 2281,
+        "publishTime": "2026-01-08T05:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 11,
+        "startTime": "2026-01-08T05:00:00Z"
+      },
+      "publish_time": "2026-01-08T05:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 11,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        37
+      ],
+      "start_time": "2026-01-08T05:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 2256,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 2256,
+        "publishTime": "2026-01-08T05:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 10,
+        "startTime": "2026-01-08T04:30:00Z"
+      },
+      "publish_time": "2026-01-08T05:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 10,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        38
+      ],
+      "start_time": "2026-01-08T04:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 2314,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 2314,
+        "publishTime": "2026-01-08T04:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 9,
+        "startTime": "2026-01-08T04:00:00Z"
+      },
+      "publish_time": "2026-01-08T04:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 9,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        39
+      ],
+      "start_time": "2026-01-08T04:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 2221,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 2221,
+        "publishTime": "2026-01-08T04:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 8,
+        "startTime": "2026-01-08T03:30:00Z"
+      },
+      "publish_time": "2026-01-08T04:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 8,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        40
+      ],
+      "start_time": "2026-01-08T03:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 2408,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 2408,
+        "publishTime": "2026-01-08T03:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 7,
+        "startTime": "2026-01-08T03:00:00Z"
+      },
+      "publish_time": "2026-01-08T03:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 7,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        41
+      ],
+      "start_time": "2026-01-08T03:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 2765,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 2765,
+        "publishTime": "2026-01-08T03:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 6,
+        "startTime": "2026-01-08T02:30:00Z"
+      },
+      "publish_time": "2026-01-08T03:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 6,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        42
+      ],
+      "start_time": "2026-01-08T02:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 3036,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 3036,
+        "publishTime": "2026-01-08T02:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 5,
+        "startTime": "2026-01-08T02:00:00Z"
+      },
+      "publish_time": "2026-01-08T02:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 5,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        43
+      ],
+      "start_time": "2026-01-08T02:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 3572,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 3572,
+        "publishTime": "2026-01-08T02:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 4,
+        "startTime": "2026-01-08T01:30:00Z"
+      },
+      "publish_time": "2026-01-08T02:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 4,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        44
+      ],
+      "start_time": "2026-01-08T01:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 4274,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 4274,
+        "publishTime": "2026-01-08T01:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 3,
+        "startTime": "2026-01-08T01:00:00Z"
+      },
+      "publish_time": "2026-01-08T01:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 3,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        45
+      ],
+      "start_time": "2026-01-08T01:00:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 4855,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 4855,
+        "publishTime": "2026-01-08T01:00:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 2,
+        "startTime": "2026-01-08T00:30:00Z"
+      },
+      "publish_time": "2026-01-08T01:00:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 2,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        46
+      ],
+      "start_time": "2026-01-08T00:30:00Z"
+    },
+    {
+      "dataset": "FUELHH",
+      "duplicate_count": 1,
+      "fuel_type": "WIND",
+      "generation_mw": 5074,
+      "original": {
+        "dataset": "FUELHH",
+        "fuelType": "WIND",
+        "generation": 5074,
+        "publishTime": "2026-01-08T00:30:00Z",
+        "settlementDate": "2026-01-08",
+        "settlementPeriod": 1,
+        "startTime": "2026-01-08T00:00:00Z"
+      },
+      "publish_time": "2026-01-08T00:30:00Z",
+      "settlement_date": "2026-01-08",
+      "settlement_period": 1,
+      "source": {
+        "batch_id": "2026-01-08",
+        "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream",
+        "raw_file": "backend/data/raw/fuelhh/2026-01-08.json",
+        "retrieved_at": "2026-10-24T14:05:31.320946Z"
+      },
+      "source_indices": [
+        47
+      ],
+      "start_time": "2026-01-08T00:00:00Z"
+    }
+  ],
+  "validation_status": "complete",
+  "warnings": []
+}

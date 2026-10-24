@@ -1,0 +1,3519 @@
+{
+  "dataset": "WINDFOR",
+  "record_count": 584,
+  "records": [
+    {
+      "dataset": "WINDFOR",
+      "generation": 19945,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-20T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19833,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-20T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20008,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-20T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19767,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19399,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19009,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18549,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18070,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17437,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16925,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16443,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 15996,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16431,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17127,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17939,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18449,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19246,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19832,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19527,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19783,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19746,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19589,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19657,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19852,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19910,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19790,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19538,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-21T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19075,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18636,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18443,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18363,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18370,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18274,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18049,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17834,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17715,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17667,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17758,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17911,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18043,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18161,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18305,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18484,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18686,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18874,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18950,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18891,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18777,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18596,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18269,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17929,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-22T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17613,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17357,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17111,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16842,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16653,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16602,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16749,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17123,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17637,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18178,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18577,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18789,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18825,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18796,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18819,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18862,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18837,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18834,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18885,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18810,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18535,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18073,
+      "publishTime": "2026-01-21T22:30:00Z",
+      "startTime": "2026-01-23T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19945,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-20T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19833,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-20T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20008,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-20T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19767,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19399,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19009,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18549,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18070,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17437,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16925,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16443,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 15996,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16431,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17127,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17939,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18449,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19246,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19832,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19527,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19783,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19746,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19589,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19656,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19826,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19953,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19854,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19684,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-21T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19432,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19084,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18834,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18709,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18534,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18361,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18157,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17967,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17888,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17904,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18075,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18296,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18439,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18515,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18620,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18801,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18930,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18961,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18903,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18754,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18525,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18227,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17796,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17335,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-22T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16916,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16650,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16462,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16288,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16250,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16422,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16776,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17299,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17918,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18459,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18793,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18990,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19055,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19030,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19019,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18979,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18902,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18818,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18769,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18592,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18232,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17731,
+      "publishTime": "2026-01-21T18:30:00Z",
+      "startTime": "2026-01-23T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19945,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-20T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19833,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-20T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20008,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-20T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19767,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19399,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19009,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18549,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18070,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17437,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16925,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16443,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 15996,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16431,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17127,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17939,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18449,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19246,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19832,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19527,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19783,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19756,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19773,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19924,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20049,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20049,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19888,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19664,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-21T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19541,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19332,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19175,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19090,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18943,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18752,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18543,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18351,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18310,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18363,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18476,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18673,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18798,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18875,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18990,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19123,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19181,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19176,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19120,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18995,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18837,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18590,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18256,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17894,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-22T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17644,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17483,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17365,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17332,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17306,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17500,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17912,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18461,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19004,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19380,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19577,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19670,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19677,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19590,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19486,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19383,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19264,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19178,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19113,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18865,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18507,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18042,
+      "publishTime": "2026-01-21T15:30:00Z",
+      "startTime": "2026-01-23T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19945,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-20T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19833,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-20T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20008,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-20T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19767,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19399,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19009,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18549,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18070,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17437,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16925,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16443,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 15996,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16431,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17127,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17939,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18511,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19198,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19848,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20370,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20622,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20617,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20477,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20442,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20387,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20173,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19947,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19729,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-21T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19590,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19429,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19288,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19222,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19081,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18878,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18636,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18434,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18405,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18466,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18610,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18778,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18907,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19057,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19201,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19294,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19357,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19395,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19342,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19131,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18880,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18626,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18347,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17987,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-22T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17759,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17653,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17637,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17727,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17814,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18057,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18442,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18956,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19437,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19771,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19949,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19992,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19874,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19659,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19473,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19283,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19098,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18989,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18948,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18645,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18223,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17683,
+      "publishTime": "2026-01-21T11:30:00Z",
+      "startTime": "2026-01-23T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19945,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-20T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19833,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-20T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20008,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-20T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19767,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19399,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19009,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18549,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18070,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17437,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16925,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16443,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 15996,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16431,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16968,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17537,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18067,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18902,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19606,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20123,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20382,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20448,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20447,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20450,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20402,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20205,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19973,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19777,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-21T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19625,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19490,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19352,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19258,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19119,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18932,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18721,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18480,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18413,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18536,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18661,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18766,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18880,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18968,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19068,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19148,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19238,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19241,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19154,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18863,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18477,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18040,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17752,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17473,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-22T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17179,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16984,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16999,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17171,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17437,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17897,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18435,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19018,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19510,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19835,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20006,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20057,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19941,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19747,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19580,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19422,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19265,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19111,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18952,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18629,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18258,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17764,
+      "publishTime": "2026-01-21T09:30:00Z",
+      "startTime": "2026-01-23T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19945,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-20T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19833,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-20T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20008,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-20T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19767,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19399,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19009,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18549,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18070,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17437,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16925,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16443,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16268,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16577,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16909,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17441,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18130,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18783,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19448,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19920,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20312,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20470,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20523,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20550,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20488,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20318,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20096,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19891,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-21T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19746,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19600,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19427,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19288,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19140,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18973,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18775,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18558,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18478,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18566,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18666,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18737,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18871,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18987,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19104,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19205,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19268,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19258,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19179,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18905,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18529,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18047,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17730,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17483,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-22T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17238,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17076,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17098,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17256,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17480,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17879,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18432,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19030,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19510,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19836,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19991,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20032,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19930,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19763,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19627,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19509,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19397,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19280,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19150,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18849,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18505,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18051,
+      "publishTime": "2026-01-21T07:30:00Z",
+      "startTime": "2026-01-23T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19945,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-20T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19833,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-20T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20008,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-20T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19767,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19399,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19009,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18549,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18070,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17387,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16589,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16121,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16040,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16413,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16953,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17562,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18155,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18679,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19250,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19770,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20213,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20469,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20581,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20628,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20558,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20457,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20286,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20074,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-21T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19926,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19753,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19583,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19419,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19242,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19046,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18849,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18695,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18626,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18639,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18685,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18784,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18934,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19002,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19014,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19070,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19114,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19111,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19051,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18879,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18647,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18351,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18083,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17900,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-22T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17713,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17643,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17759,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17950,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18146,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18347,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18663,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19048,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19456,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19779,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19885,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19896,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19810,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19653,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19504,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19360,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19204,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18988,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18770,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18408,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18031,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17603,
+      "publishTime": "2026-01-21T04:30:00Z",
+      "startTime": "2026-01-23T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19945,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-20T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19833,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-20T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20008,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-20T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19767,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19399,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19009,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18551,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17984,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17259,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16538,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16002,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16000,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16424,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 16976,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17580,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18135,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18728,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19322,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19835,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20268,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20536,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20657,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20720,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20658,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20562,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20385,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 20145,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-21T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19970,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19778,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19600,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19437,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19260,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19040,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18823,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18676,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18638,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18607,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18668,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18788,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18871,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18902,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18930,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19020,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19086,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19101,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19027,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18862,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18692,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18459,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T21:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18206,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T22:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18064,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-22T23:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17963,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T00:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17943,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T01:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18038,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T02:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18126,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T03:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18236,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T04:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18437,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T05:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18775,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T06:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19165,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T07:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19559,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T08:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19867,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T09:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19952,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T10:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19947,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T11:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19849,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T12:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19657,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T13:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19417,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T14:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 19167,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T15:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18960,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T16:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18714,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T17:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18508,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T18:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 18172,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T19:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17778,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T20:00:00Z"
+    },
+    {
+      "dataset": "WINDFOR",
+      "generation": 17364,
+      "publishTime": "2026-01-21T02:30:00Z",
+      "startTime": "2026-01-23T21:00:00Z"
+    }
+  ],
+  "request": {
+    "endpoint": "https://data.elexon.co.uk/bmrs/api/v1/datasets/WINDFOR/stream",
+    "parameters": {
+      "publishDateTimeFrom": "2026-01-21T00:00:00Z",
+      "publishDateTimeTo": "2026-01-21T23:59:59.999999Z"
+    }
+  },
+  "request_status": "success",
+  "retrieved_at": "2026-10-24T14:05:45.375920Z"
+}

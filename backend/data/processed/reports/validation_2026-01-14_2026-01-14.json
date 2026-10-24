@@ -1,0 +1,63 @@
+{
+  "actual_date_coverage_utc": {
+    "first": "2026-01-15T00:00:00Z",
+    "last": "2026-01-15T23:30:00Z"
+  },
+  "actual_revision_period_count": 0,
+  "complete_hourly_actual_count": 24,
+  "conflicting_duplicate_counts": {
+    "FUELHH": 0,
+    "WINDFOR": 0
+  },
+  "exact_duplicate_counts": {
+    "FUELHH": 0,
+    "WINDFOR": 0
+  },
+  "failed_api_requests": [],
+  "forecast_publication_count": 32,
+  "forecast_target_coverage_utc": {
+    "first": "2026-01-10T21:00:00Z",
+    "last": "2026-01-16T21:00:00Z"
+  },
+  "generated_at": "2026-10-24T14:04:51.713922Z",
+  "hourly_actual_aggregation_warning_count": 0,
+  "incomplete_batches": [],
+  "lookback_oldest_24h_relevant_record_counts": {
+    "2026-01-14": 0
+  },
+  "manifest_path": "backend/data/manifest.json",
+  "matched_hour_counts_by_decision": {
+    "2026-01-14": 24
+  },
+  "missing_half_hour_actual_period_count": 0,
+  "missing_half_hour_actual_periods": [],
+  "missing_hourly_forecast_target_counts_by_decision": {
+    "2026-01-14": 0
+  },
+  "missing_hourly_forecast_targets_by_decision": {
+    "2026-01-14": []
+  },
+  "negative_lead_time_count": 480,
+  "null_generation_counts": {
+    "FUELHH": 0,
+    "WINDFOR": 0
+  },
+  "report_version": 1,
+  "scope": {
+    "cutoff_time_europe_london": "12:00:00",
+    "decision_end": "2026-01-14",
+    "decision_start": "2026-01-14",
+    "forecast_lookback_hours": 72
+  },
+  "selected_forecast_publications_by_decision": {
+    "2026-01-14": [
+      "2026-01-14T11:30:00Z"
+    ]
+  },
+  "selected_forecast_target_counts_by_decision": {
+    "2026-01-14": 24
+  },
+  "total_actual_records": 48,
+  "total_forecast_records": 2336,
+  "unresolved_data_quality_concerns": []
+}

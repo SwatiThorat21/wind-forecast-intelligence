@@ -614,9 +614,10 @@ def main(argv: Sequence[str] | None = None) -> int:
         f"Actual records: {report['total_actual_records']}; "
         f"forecast records: {report['total_forecast_records']}; "
         f"failed batches: {len(report['failed_api_requests'])}; "
-        f"incomplete batches: {len(report['incomplete_batches'])}"
+        f"incomplete batches: {len(report['incomplete_batches'])}; "
+        f"quality concerns: {len(report['unresolved_data_quality_concerns'])}"
     )
-    return 1 if report["failed_api_requests"] else 0
+    return 1 if report["failed_api_requests"] or report["incomplete_batches"] else 0
 
 
 if __name__ == "__main__":

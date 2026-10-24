@@ -72,7 +72,11 @@ sample is checked.
 
 ## Historical JSON storage
 
-`backend/data/raw/` will contain immutable or content-addressed source extracts and a small manifest containing endpoint, query parameters, retrieval time, and record count. `backend/data/processed/` will contain compact normalized records used by the application.
+`backend/data/raw/` contains source-date extracts that are reused by default and
+replaced atomically only under explicit `--refresh`. The manifest retains every
+request attempt, endpoint, query parameters, retrieval time, status, count, and
+file path. `backend/data/processed/` contains normalized records and validation
+reports.
 
 The canonical processed fields are expected to be:
 
