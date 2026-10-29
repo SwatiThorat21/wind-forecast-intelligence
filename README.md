@@ -191,7 +191,7 @@ docker compose build
 docker compose up -d
 ```
 
-The intended public deployment uses Render for the Flask API and Vercel for the React frontend.
+The planned public deployment uses Render for the Flask API and Vercel for the React frontend. Deployment is not yet complete.
 
 Production configuration requires the historical processed JSON files to be packaged with the backend, an appropriately configured `VITE_API_BASE_URL`, and a restricted `CORS_ALLOWED_ORIGINS` allowlist.
 
@@ -213,13 +213,24 @@ For further details, see [Architecture](docs/ARCHITECTURE.md), [Data Exploration
 - Forecast errors do not directly imply financial loss without purchasing volume and market price information.
 - Accuracy coverage may vary when the decision cutoff changes.
 
-## AI-Assisted Development
+## AI-Assisted Development (OpenAI Codex)
 
-AI coding tools were used to assist with project scaffolding, implementation, test generation, code review, and documentation.
+**AI tools used:** OpenAI Codex (coding assistant), with ChatGPT used to help plan implementation steps, clarify the energy-domain requirements, and review documentation and presentation explanations.
 
-The project was developed through an iterative workflow involving API exploration, live Elexon data validation, cutoff-selection checks, local integration testing, and manual dashboard review.
+I used **OpenAI Codex** as a development assistant throughout the project. Work was organized into small, reviewable phases rather than asking the tool to generate the entire application in one step:
 
-AI-generated implementation details were checked against the available historical data and documented assumptions. Any remaining unverified behavior is disclosed rather than presented as established fact.
+- **Project setup and design:** Helped scaffold the React/Flask project structure and draft initial architecture, assumptions, and data-exploration documentation.
+- **Elexon data exploration and ingestion:** Assisted with API probing, bounded data fetching, retry/error handling, normalization, historical record storage, and validation reporting.
+- **Forecast analysis and backend:** Assisted with implementing cutoff-aware forecast selection, hourly forecast/actual alignment, accuracy metrics, Flask services, and REST API routes.
+- **Dashboard development:** Assisted with React components, charts, date/cutoff controls, responsive styling, and loading/error states.
+- **Testing and deployment preparation:** Assisted with pytest test cases, edge-case checks, Docker configuration, and Render/Vercel deployment files.
+- **Documentation:** Helped draft and refine the README and technical documentation.
+
+**My role and verification:** I defined the business requirements and decision-cutoff rules, directed the implementation through iterative prompts, reviewed the generated code and UI, ran the application locally, checked the Elexon responses, and validated forecast-selection behavior against historical examples. I also reviewed the assumptions and limitations rather than treating AI-generated outputs as automatically correct.
+
+For example, I checked that a **14 January 2026, 12:00 Europe/London** purchasing cutoff selects forecasts published before that cutoff for **15 January** delivery, and that later publications are excluded. I also validated the full-month ingestion counts and inspected the dashboard using the processed dataset.
+
+AI assistance was used to accelerate implementation; the project methodology, results, and documented limitations remain subject to the validation described in this repository. Any tests or deployment steps not yet run are not represented as completed.
 
 ## Data Attribution
 
